@@ -10,7 +10,7 @@ $(document).ready(function(){
 	// Scroll animation
 	$('.navbar a').on('click', function() { // Au clic sur un élément
 		var page = $(this).attr('href'); // Page cible
-		var speed = 750; // Durée de l'animation (en ms)
+		var speed = 750; // Durée de l'animation
 		$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
 			return false;
 		});
