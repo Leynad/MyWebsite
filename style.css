@@ -11,12 +11,6 @@ section
 	padding: 45px 0 80px 0;
 }
 
-img
-{
-	max-width: 100%;
-	height: auto;
-}
-
 h1,h2,h3,h4,h5,h6
 {
 	font-weight: bold;
@@ -26,15 +20,6 @@ section .heading
 {
 	text-align: center;
 	padding-bottom: 40px;
-}
-
-.divider
-{
-	width: 100px;
-	height: 2px;
-	background: purple;
-	margin: 15px auto;
-	
 }
 
 /* NAVBAR */
@@ -57,66 +42,103 @@ section .heading
 	border-style: none;
 }
 
+.dash
+{
+	margin: 15px auto;
+	height: 4px;
+	width: 30px;
+}
+
 /* ABOUT */
 
 #about
 {
 	height: 100%;
 	padding-top: 100px;
-	background: #9999AC;
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-color: #2e3141;
+	background-size: cover;
+	overflow: auto;
 }
 
-.profile-picture
+#about .main
 {
 	text-align: center;
-	margin: 0 auto;
-	float: none;
+	padding-top: 140px;
 }
 
-#about .heading h1
+#about .main h1
 {
 	color: #fff;
-	text-transform: uppercase
-}
-
-#about .heading h3
-{
-	color: #fff;
-	font-size: 23px;
+	font-size: 65px;
 	text-transform: uppercase;
 }
 
-.dash
-{
-	margin: 15px auto;
-	height: 4px;
-	width: 30px;
-	background-color: #fff;
-
-}
-
-#about p
+section .main h3
 {
 	color: #fff;
+	font-size: 27px;
+	opacity: .75;
+	text-transform: uppercase;
+}
+
+#about .dash
+{
+
+	background-color: #fff;
+}
+
+#about .main p
+{
+	color: #fff;
+}
+
+#about .link-list
+{
+	height: 100px;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+#about .link-list a
+{
+	color: #fff;
+	font-size: 55px;
+	margin: auto 30px;
+	text-decoration: none;
+
 }
 
 /* SKILLS */
 
+#skills .dash
+{
+
+	background-color: #000;
+}
 #skills
 {
 	height: 100%;
-	background: #fff;
+	overflow: auto;
 }
 
 #skills .heading
 {
-	padding-top: 35px;
+	padding-top: 40px;
 }
 
 #skills .heading h2
 {
+	color: #000;
 	text-transform: uppercase;
 	font-size: 45px;
+}
+
+#skills .heading h4
+{
+	font-size: 22px;
+	opacity: .75;
+	color: #000;
 }
 
 .skillbar 
@@ -199,9 +221,15 @@ section .heading
 
 /* PORTFOLIO */
 
+#portfolio .dash
+{
+	background-color: #000;
+}
+
 #portfolio
 {
-	background: red;
+	background: linear-gradient(to bottom, #fbfbfb 0%, #003366 100%);
+
 }
 
 #portfolio .heading h2
@@ -211,18 +239,31 @@ section .heading
 	text-transform: uppercase;
 }
 
+#portfolio .heading h4
+{
+	font-size: 22px;
+	opacity: .75;
+	color: #000;
+}
+
+#portfolio .col-sm-6
+{
+	padding-bottom: 20px;
+}
+
 #portfolio .thumbnail img
 {
 	width: 100%;
 	height: 100%;
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%); /* pour chrome */
+	box-shadow: 5px 5px 9px #ebebf3;
+
 }
 
 #portfolio .thumbnail img:hover
 {
 	filter: none;
 	-webkit-filter: none;
+	border: 2px solid green;
 }
-
-
